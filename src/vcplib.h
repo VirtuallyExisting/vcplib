@@ -8,7 +8,7 @@ void vcplib_Init(void);
 
 void vcplib_DrawImage(C2D_Image img, float x, float y, float scale);
 
-void vcplib_DrawRect(float x, float y, float width, float height, C2D_Color32 color);
+void vcplib_DrawRect(float x, float y, float width, float height, u32 color);
 
 void vcplib_Deinit(void);
 

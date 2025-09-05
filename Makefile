@@ -19,7 +19,9 @@ include $(DEVKITARM)/3ds_rules
 # Compiler flags
 CFLAGS  := -g -Wall -O2 -mword-relocations
 CFLAGS  += -ffunction-sections -fdata-sections
-CFLAGS  += -DARM11 -D_3DS
+CFLAGS  += -D__3DS__
+
+CFLAGS  += -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft
 
 CXXFLAGS := $(CFLAGS) -fno-rtti -fno-exceptions
 ASFLAGS  := -g

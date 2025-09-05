@@ -7,20 +7,14 @@ void vcplib_Init(void) {
 	C3D_Init(C3D_DEFAULT_CMDBUF_SIZE);
 	C2D_Init(C2D_DEFAULT_MAX_OBJECTS);
 	C2D_Prepare();
-
-	// Create render targets for top and bottom screens
-	C3D_RenderTarget* top = C2D_CreateScreenTarget(GFX_TOP, GFX_LEFT);
-	C3D_RenderTarget* bottom = C2D_CreateScreenTarget(GFX_BOTTOM, GFX_LEFT);
-
-    u32 vcplibclearcolor = C2D_Color32(0x00, 0x00, 0x00, 0x00);
 }
 
 void vcplib_DrawImage(C2D_Image img, float x, float y, float scale) {
-    C2D_DrawImageAt(img, x, y, 0, null, scale, scale)
+    C2D_DrawImageAt(img, x, y, 0, NULL, scale, scale);
 }
 
 void vcplib_DrawRect(float x, float y, float width, float height, u32 color) {
-    C2D_DrawRectSolid(x, y, width, height, color)
+    C2D_DrawRectSolid(x, y, 0, width, height, color);
 }
 
 void vcplib_Deinit(void) {
@@ -34,11 +28,17 @@ void vcplib_FrameBegin(void) {
 }
 
 void vcplib_BeginTopScreen(void) {
+		// Create render target for top screen
+		u32 vcplibclearcolor = C2D_Color32(0x00, 0x00, 0x00, 0x00);
+		C3D_RenderTarget* top = C2D_CreateScreenTarget(GFX_TOP, GFX_LEFT);
     	C2D_TargetClear(top, vcplibclearcolor);
 		C2D_SceneBegin(top);
 }
 
 void vcplib_BeginBottomScreen(void) {
+		// Create render target for bottom screen
+		u32 vcplibclearcolor = C2D_Color32(0x00, 0x00, 0x00, 0x00);
+		C3D_RenderTarget* bottom = C2D_CreateScreenTarget(GFX_BOTTOM, GFX_LEFT);
     	C2D_TargetClear(bottom, vcplibclearcolor);
 		C2D_SceneBegin(bottom);
 }
