@@ -1,6 +1,9 @@
 # vcplib (Virtually Cross Platform Library)
 Library for making games across Nintendo Wii, 3DS, and DS
 
+## Hey!
+This is the **_Wii Branch_**, if you are here for 3DS or DS, go to their respective branches, if not, welcome!
+
 **Currently supported platforms:**
 - Nintendo 3DS
 
