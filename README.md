@@ -4,6 +4,10 @@ Library for making games across Nintendo Wii, 3DS, and DS
 ## Hey!
 This is the **_Wii Branch_**, if you are here for 3DS or DS, go to their respective branches, if not, welcome!
 
+
+# Due to issues with GRRLIB
+This branch has not been completed.
+
 **Currently supported platforms:**
 - Nintendo 3DS
 
