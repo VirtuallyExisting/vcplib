@@ -5,6 +5,9 @@ Library for making games across Nintendo Wii, 3DS, and DS
 - Nintendo 3DS
 - Wii
 
+## Hey!
+This is the **_3DS branch_**, if you are here for Wii or DS, go to their respective branches, if not, welcome!
+
 ## What is vcplib?
 vcplib is a library attempting to use OTHER libraries to make cross-platform games easier across Wii, 3DS, and DS.
 
