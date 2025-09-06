@@ -8,9 +8,6 @@ This is the **_Wii Branch_**, if you are here for 3DS or DS, go to their respect
 # Due to issues with GRRLIB
 This branch has not been completed.
 
-**Currently supported platforms:**
-- Nintendo 3DS
-
 ## What is vcplib?
 vcplib is a library attempting to use OTHER libraries to make cross-platform games easier across Wii, 3DS, and DS.
 
