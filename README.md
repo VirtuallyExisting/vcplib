@@ -3,6 +3,7 @@ Library for making games across Nintendo Wii, 3DS, and DS
 
 **Currently supported platforms:**
 - Nintendo 3DS
+- Wii
 
 ## What is vcplib?
 vcplib is a library attempting to use OTHER libraries to make cross-platform games easier across Wii, 3DS, and DS.
@@ -26,9 +27,12 @@ C:/devkitPro can be substituted for wherever you installed devkitPro.
 
 (3DS is the only supported console at the moment.)
 3DS: C:/devkitPro/libctru
+Wii: C:/devkitPro/libogc
 
 Go to the lib folder and place the .a in there.
 Then go back out of the lib folder and go inside the include folder, place the .h in there.
+
+(NOTE: If you are using Wii, go inside the Wii folder inside of the lib folder.)
 
 Third, define the library in your makefile:
 
