@@ -1,7 +1,7 @@
 #ifndef VCPLIB_H
 #define VCPLIB_H
 
-#include <citro2d.h>
+#include <grrlib.h>
 
 // This function initalizes everything that needs initalized
 void vcplib_Init(void);
