@@ -9,22 +9,18 @@ SRC     := src
 #---------------------------------------------------------------------------------
 # Toolchain
 #---------------------------------------------------------------------------------
-include $(DEVKITARM)/3ds_rules
+include $(DEVKITPPC)/wii_rules
 
 # Compiler flags
-CFLAGS  := -g -Wall -O2 -mword-relocations
-CFLAGS  += -ffunction-sections -fdata-sections
-CFLAGS  += -D__3DS__
-
-CFLAGS  += -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft
-
-CXXFLAGS := $(CFLAGS) -fno-rtti -fno-exceptions
-ASFLAGS  := -g
+CC       := $(DEVKITPPC)/bin/powerpc-eabi-gcc
+CC := $(DEVKITPPC)/bin/powerpc-eabi-gcc
+AR := $(DEVKITPPC)/bin/powerpc-eabi-ar
+CFLAGS := -mcpu=750 -meabi -mhard-float -O2 -Wall -ffunction-sections -fdata-sections
 
 # Include paths to libogc and the portlibs folder (where GRRLIB should be located)
 INCLUDES := -I$(INCLUDE) -I$(SRC)
 INCLUDES += -I$(DEVKITPRO)/libogc/include
-INCLUDES += -I$(PORTLIBS)/wii/include
+INCLUDES += -I$(DEVKITPRO)/portlibs/wii/include
 
 
 

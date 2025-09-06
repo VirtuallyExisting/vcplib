@@ -5,7 +5,7 @@ void vcplib_Init(void) {
 	GRRLIB_Init();
 }
 
-void vcplib_DrawImage(GRRLIB_texImg img, float x, float y, float scale) {
+void vcplib_DrawImage(const GRRLIB_texImg *img, float x, float y, float scale) {
 	GRRLIB_DrawImg(x, y, img, 0, scale, scale, 0xFFFFFFFF);
 }
 
@@ -18,15 +18,15 @@ void vcplib_Deinit(void) {
 }
 
 void vcplib_FrameBegin(void) {
-    return 0;
+    
 }
 
 void vcplib_BeginTopScreen(void) {
-	return 0;
+	
 }
 
 void vcplib_BeginBottomScreen(void) {
-	return 0;
+	
 }
 
 
