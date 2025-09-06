@@ -1,8 +1,3 @@
-#---------------------------------------------------------------------------------
-# 3DS Static Library Makefile (with Citro2D + libctru support)
-# Outputs: libmygraphics.a
-#---------------------------------------------------------------------------------
-
 # Library name
 LIBNAME := vcplib
 
@@ -26,11 +21,12 @@ CFLAGS  += -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft
 CXXFLAGS := $(CFLAGS) -fno-rtti -fno-exceptions
 ASFLAGS  := -g
 
-# Include paths (critical: tell compiler where to find C2D/ctru headers)
+# Include paths to libogc and the portlibs folder (where GRRLIB should be located)
 INCLUDES := -I$(INCLUDE) -I$(SRC)
+INCLUDES += -I$(DEVKITPRO)/libogc/include
 INCLUDES += -I$(PORTLIBS)/include
-INCLUDES += -I$(CTRULIB)/include
-INCLUDES += -I$(CITRO2D)/include
+
+
 
 #---------------------------------------------------------------------------------
 # Source files
