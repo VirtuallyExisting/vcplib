@@ -24,7 +24,7 @@ ASFLAGS  := -g
 # Include paths to libogc and the portlibs folder (where GRRLIB should be located)
 INCLUDES := -I$(INCLUDE) -I$(SRC)
 INCLUDES += -I$(DEVKITPRO)/libogc/include
-INCLUDES += -I$(PORTLIBS)/include
+INCLUDES += -I$(PORTLIBS)/wii/include
 
 
 
