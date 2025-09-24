@@ -9,8 +9,8 @@ void vcplib_Init(void) {
 	C2D_Prepare();
 }
 
-void vcplib_DrawImage(C2D_Image img, float x, float y, float scale) {
-    C2D_DrawImageAt(img, x, y, 0, NULL, scale, scale);
+void vcplib_DrawImage(C2D_Image img, float x, float y, float scalex, float scaley) {
+    C2D_DrawImageAt(img, x, y, 0, NULL, scalex, scaley);
 }
 
 void vcplib_DrawRect(float x, float y, float width, float height, u32 color) {
