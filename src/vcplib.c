@@ -5,8 +5,8 @@ void vcplib_Init(void) {
 	GRRLIB_Init();
 }
 
-void vcplib_DrawImage(const GRRLIB_texImg *img, float x, float y, float scale) {
-	GRRLIB_DrawImg(x, y, img, 0, scale, scale, 0xFFFFFFFF);
+void vcplib_DrawImage(const GRRLIB_texImg *img, float x, float y, float scalex, float scaley) {
+	GRRLIB_DrawImg(x, y, img, 0, scalex, scaley, 0xFFFFFFFF);
 }
 
 void vcplib_DrawRect(float x, float y, float width, float height, u32 color) {

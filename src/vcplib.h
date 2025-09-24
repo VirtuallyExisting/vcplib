@@ -6,7 +6,7 @@
 // This function initalizes everything that needs initalized
 void vcplib_Init(void);
 
-void vcplib_DrawImage(const GRRLIB_texImg *img, float x, float y, float scale);
+void vcplib_DrawImage(const GRRLIB_texImg *img, float x, float y, float scale, float scaley);
 
 void vcplib_DrawRect(float x, float y, float width, float height, u32 color);
 
